@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" afterDir="false" />
+    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="🤙 🤙🤙Made save and write data in method, so that unit testing is possible there">
+      <change afterPath="$PROJECT_DIR$/src/SensorDataStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge2-Prog2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge2-Prog2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datensatz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datensatz.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +15,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
