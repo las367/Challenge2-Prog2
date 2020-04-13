@@ -1,15 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="" />
+    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challenge2-Prog2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge2-Prog2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datensatz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datensatz.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aDaHfcqhcLDEr46TmMBHE9zCHD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WriteAndReadDataSetTest.printData">
+    <configuration name="WriteAndReadDataSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WriteAndReadDataSet" />
+      <module name="Challenge2-Prog2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteAndReadDataSetTest.printData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge2-Prog2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WriteAndReadDataSetTest" />
+      <option name="METHOD_NAME" value="printData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteAndReadDataSetTest.writeData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge2-Prog2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WriteAndReadDataSetTest" />
+      <option name="METHOD_NAME" value="writeData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WriteAndReadDataSetTest.printData" />
+        <item itemvalue="JUnit.WriteAndReadDataSetTest.writeData" />
+        <item itemvalue="Application.WriteAndReadDataSet" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -23,5 +102,59 @@
       <updated>1586272531121</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="397" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586682965458">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="397" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586682965458" />
+    <state x="2520" y="34" width="702" height="986" key="CommitChangelistDialog2" timestamp="1586766883824">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2520" y="34" width="702" height="986" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766883824" />
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom" timestamp="1586766732007">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586694078763" />
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766732007" />
+    <state width="1543" height="231" key="GridCell.Tab.0.center" timestamp="1586766732006">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586694078763" />
+    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766732006" />
+    <state width="1543" height="231" key="GridCell.Tab.0.left" timestamp="1586766732006">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586694078762" />
+    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766732006" />
+    <state width="1543" height="231" key="GridCell.Tab.0.right" timestamp="1586766732006">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586694078763" />
+    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766732006" />
+    <state x="2359" y="103" width="1024" height="848" key="SettingsEditor" timestamp="1586766311937">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2359" y="103" width="1024" height="848" key="SettingsEditor/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766311937" />
+    <state x="2545" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1586766047804">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2545" y="353" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766047804" />
+    <state x="2585" y="416" width="572" height="222" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586766383616">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2585" y="416" width="572" height="222" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766383616" />
+    <state x="2620" y="208" width="492" height="640" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586766858378">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2620" y="208" width="492" height="640" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766858378" />
+    <state x="2650" y="222" width="442" height="610" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586766362523">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2650" y="222" width="442" height="610" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766362523" />
+    <state x="2260" y="102" width="1222" height="850" key="new project wizard" timestamp="1586766293257">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2260" y="102" width="1222" height="850" key="new project wizard/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766293257" />
   </component>
 </project>
