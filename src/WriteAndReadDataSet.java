@@ -13,38 +13,44 @@ public class WriteAndReadDataSet {
         static void writeData(String filename, byte[] dataAsBytes) {
             try {
                 FileOutputStream fos = new FileOutputStream(filename);
-                fos.write(dataAsBytes);
-            } catch (NoSuchFileException ex) {
-                System.out.println("File Is Not Found!");
+                DataOutputStream dos = new DataOutputStream(fos);
+                dos.write(dataAsBytes);
+                dos.close();
+                fos.close();
+            } catch (FileNotFoundException ex) {
+                System.out.println(filename + "is a directory!");
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
 
         static String printData(int length, String filename) {
+
+            byte[] datas = new byte[length];
+
             try {
 
                 //create new array of bytes to store the input byte stream
-                byte[] datas = new byte[length];
                 FileInputStream fis = new FileInputStream(filename);
+                DataInputStream dis = new DataInputStream(fis);
                 int i = 0;
-                byte temp = (byte) fis.read();
 
-                do {
-                    datas[i] = temp;
-                    i++;
-                    temp = (byte) fis.read();
-                } while(temp != -1);
-
-                return new String(datas);
+                while (true) {
+                    try {
+                        datas[i] = dis.readByte();
+                        i++;
+                    } catch (EOFException ex) {
+                        break; //end reached
+                    } catch (IOException ex) {
+                        break;
+                    }
+                }
 
             } catch (FileNotFoundException e) {
                 System.out.println("File is Not Found");
-            } catch (IOException ex) {
-                ex.printStackTrace();
             }
 
-            return "";
+            return new String(datas);
         }
 
     public static void main(String[] args) {

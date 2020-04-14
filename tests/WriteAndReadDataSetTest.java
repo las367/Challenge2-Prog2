@@ -9,13 +9,13 @@ public class WriteAndReadDataSetTest {
     @org.junit.Test
     public void writeData() {
         byte[] sampleData = {1, 2, 3, 2, 1, 4, 5, 2, 1, 7};
-        WriteAndReadDataSet.writeData("non-existing-file.txt", sampleData);
+        WriteAndReadDataSet.writeData("aaa", sampleData);
     }
 
     //Zum Testen, wenn die Datei nicht exiistiert
     @org.junit.Test
     public void printData() {
         byte[] sampleData = {1, 2, 3, 2, 1, 4, 5, 2, 1, 7};
-        WriteAndReadDataSet.writeData("non-existing-file.txt", sampleData);
+        WriteAndReadDataSet.printData(sampleData.length,"non-existing-file.txt");
     }
 }
