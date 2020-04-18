@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -6,16 +8,27 @@ import static org.junit.Assert.*;
 public class WriteAndReadDataSetTest {
 
     //Zum Testen, wenn die Datei nich existiert
-    @org.junit.Test
+    @Test
     public void writeData() {
-        byte[] sampleData = {1, 2, 3, 2, 1, 4, 5, 2, 1, 7};
-        WriteAndReadDataSet.writeData("aaa", sampleData);
+        String data = "Guten Morgen";
+        WriteAndReadDataSet.writeData("aaa", data);
     }
 
     //Zum Testen, wenn die Datei nicht exiistiert
-    @org.junit.Test
+    @Test
     public void printData() {
-        byte[] sampleData = {1, 2, 3, 2, 1, 4, 5, 2, 1, 7};
-        WriteAndReadDataSet.printData(sampleData.length,"non-existing-file.txt");
+        WriteAndReadDataSet.printData("non-existing-file.txt");
+    }
+
+    @Test
+    public void printAndReadData() {
+        String sampleText = "Moodle HTW", fileName = "test.txt";
+
+        //read data
+        WriteAndReadDataSet.writeData(fileName, sampleText);
+        //read data from the written file
+        String dataSet = WriteAndReadDataSet.printData(fileName);
+
+        assertEquals(sampleText, dataSet);
     }
 }

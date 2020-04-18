@@ -10,7 +10,10 @@ public class WriteAndReadDataSet {
             return name + "\n" + new Date(timeStamp) + "\n" + Arrays.toString(value) + "\n";
         }
 
-        static void writeData(String filename, byte[] dataAsBytes) {
+        static void writeData(String filename, String data) {
+
+            //Change Dataset to an array of bytes
+            byte[] dataAsBytes = data.getBytes();
             try {
                 FileOutputStream fos = new FileOutputStream(filename);
                 DataOutputStream dos = new DataOutputStream(fos);
@@ -24,21 +27,20 @@ public class WriteAndReadDataSet {
             }
         }
 
-        static String printData(int length, String filename) {
+        static String printData(String filename) {
 
-            byte[] datas = new byte[length];
+            String data = "";
 
             try {
 
                 //create new array of bytes to store the input byte stream
                 FileInputStream fis = new FileInputStream(filename);
                 DataInputStream dis = new DataInputStream(fis);
-                int i = 0;
 
                 while (true) {
                     try {
-                        datas[i] = dis.readByte();
-                        i++;
+                        byte nextDataAsByte = dis.readByte();
+                        data += (char) nextDataAsByte;
                     } catch (EOFException ex) {
                         break; //end reached
                     } catch (IOException ex) {
@@ -50,7 +52,7 @@ public class WriteAndReadDataSet {
                 System.out.println("File is Not Found");
             }
 
-            return new String(datas);
+            return data;
         }
 
     public static void main(String[] args) {
@@ -92,15 +94,13 @@ public class WriteAndReadDataSet {
         }
 
         //convert string into an array of bytes.
-        byte[] dataAsBytes = data.getBytes();
-        final int dataAsBytesLength = dataAsBytes.length;
         String filename = "datensatz.txt";
 
 
-        writeData(filename, dataAsBytes);
+        writeData(filename, data);
 
         // read data from file and print to System.out
-        String dataAsString = printData(dataAsBytesLength, filename);
+        String dataAsString = printData(filename);
         System.out.println(dataAsString);
     }
 }
