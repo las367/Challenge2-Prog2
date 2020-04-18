@@ -1,6 +1,4 @@
 import java.io.IOException;
-import java.nio.file.NoSuchFileException;
-
 /**
  * We assume: Each sensor gets its own storage engine. There wont be a parameter
  * sensor name.
@@ -19,17 +17,17 @@ public interface SensorDataStorage {
      * method to write the data set into a text file
      * @param filename name of the file, that the machine would write into..
      * @return true if successful, false if error occurred
-     * @throws NoSuchFileException if the file doesn't exist
      * @throws IOException id there is an error on Input/Output
      * @throws PersistenceException if something unexpected happened. Insufficient right, medium broken, offline..
      */
-    boolean writeData(String filename) throws NoSuchFileException, IOException, PersistenceException;
+    boolean writeData(String filename) throws IOException, PersistenceException;
 
     /**
      * Method to return the size of data in the machine
+     * @throws EmptyDataException if there are no data saved by the machine
      * @return size of the data in byte.
      */
-    int size();
+    int size() throws  EmptyDataException;
 
     /**
      * method to clear all data saved inside the machine

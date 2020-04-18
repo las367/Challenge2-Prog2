@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="🤙 🤙🤙Made save and write data in method, so that unit testing is possible there">
-      <change afterPath="$PROJECT_DIR$/src/EmptyDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NoSuchDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PersistenceException.java" afterDir="false" />
+    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datensatz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datensatz.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/non-existing-file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Challenge2-Prog2/WriteAndReadDataSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge2-Prog2/WriteAndReadDataSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Challenge2-Prog2/datensatz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Challenge2-Prog2/WriteAndReadDataSetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Challenge2-Prog2/WriteAndReadDataSetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datensatz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SensorDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SensorDataStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +45,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -127,35 +118,41 @@
     </state>
     <state x="600" y="63" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868838276" />
     <state x="2520" y="34" width="702" height="986" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766883824" />
-    <state width="1543" height="231" key="GridCell.Tab.0.bottom" timestamp="1586868800563">
+    <state x="753" y="314" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586872630081">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868800563" />
+    <state x="753" y="314" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586872630081" />
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom" timestamp="1586868906773">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
     <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
-    <state width="1543" height="231" key="GridCell.Tab.0.center" timestamp="1586868800563">
+    <state width="1543" height="231" key="GridCell.Tab.0.center" timestamp="1586868906773">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868800563" />
+    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
     <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
-    <state width="1543" height="231" key="GridCell.Tab.0.left" timestamp="1586868800563">
+    <state width="1543" height="231" key="GridCell.Tab.0.left" timestamp="1586868906772">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868800563" />
+    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906772" />
     <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
-    <state width="1543" height="231" key="GridCell.Tab.0.right" timestamp="1586868800563">
+    <state width="1543" height="231" key="GridCell.Tab.0.right" timestamp="1586868906773">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868800563" />
+    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
-    <state x="2359" y="103" width="1024" height="848" key="SettingsEditor" timestamp="1586766311937">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="439" y="130" width="1024" height="848" key="SettingsEditor" timestamp="1587227895365">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="2359" y="103" width="1024" height="848" key="SettingsEditor/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766311937" />
-    <state x="625" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1586866140221">
+    <state x="439" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1587227895365" />
+    <state x="625" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1587233221163">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586866140221" />
+    <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586872615378" />
     <state x="2545" y="353" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766047804" />
+    <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1587233221163" />
     <state x="2585" y="416" width="572" height="222" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586766383616">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
