@@ -1,7 +1,5 @@
+import filepersistence.WriteAndReadDataSet;
 import org.junit.Test;
-
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 
 import static org.junit.Assert.*;
 

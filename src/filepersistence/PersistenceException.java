@@ -1,3 +1,5 @@
+package filepersistence;
+
 public class PersistenceException extends Exception {
 
     private String message;

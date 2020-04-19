@@ -1,3 +1,5 @@
+package filepersistence;
+
 import java.io.IOException;
 /**
  * We assume: Each sensor gets its own storage engine. There wont be a parameter
@@ -37,11 +39,23 @@ public interface SensorDataStorage {
     boolean clear() throws EmptyDataException;
 
     /**
-     * method to get a data set on a specified timestamp
+     * check if a dataset on a specified timestamp exists in the storage
      * @param time timestamp specified by user to get a particular data set
+     * @return true if the storage contains the specified data
+     * @throws EmptyDataException if there are no data saved by the machine
+     */
+    boolean contains(long time) throws EmptyDataException;
+
+    /**
+     * method to get a data set on a specified timestamp
+     * @param time
      * @return an array of data set
      * @throws EmptyDataException if there are no data saved by the machine
      * @throws NoSuchDataException if there are no data set saved on the particular timestamp.
      */
-    float[] contains(long time) throws EmptyDataException, NoSuchDataException;
+    float[] get(long time) throws EmptyDataException, NoSuchDataException;
+
+    long getLastTimestamp();
+
+    float[] getLastValueSet();
 }

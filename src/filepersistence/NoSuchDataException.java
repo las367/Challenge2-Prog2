@@ -1,3 +1,5 @@
+package filepersistence;
+
 public class NoSuchDataException extends Exception {
 
     private String message;

@@ -1,3 +1,5 @@
+package filepersistence;
+
 public class EmptyDataException extends Exception {
 
     String message;

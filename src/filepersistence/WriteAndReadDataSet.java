@@ -1,3 +1,5 @@
+package filepersistence;
+
 import java.io.*;
 import java.nio.file.NoSuchFileException;
 import java.util.Arrays;
@@ -10,7 +12,7 @@ public class WriteAndReadDataSet {
             return name + "\n" + new Date(timeStamp) + "\n" + Arrays.toString(value) + "\n";
         }
 
-        static void writeData(String filename, String data) {
+        public static void writeData(String filename, String data) {
 
             //Change Dataset to an array of bytes
             byte[] dataAsBytes = data.getBytes();
@@ -27,7 +29,7 @@ public class WriteAndReadDataSet {
             }
         }
 
-        static String printData(String filename) {
+        public static String printData(String filename) {
 
             String data = "";
 
