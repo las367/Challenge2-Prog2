@@ -73,10 +73,12 @@ public class SensorDataTransmissionTests {
             }
 
             @Override
-            public boolean clear() throws EmptyDataException {
-                this.valueSet.clear();
-                this.timestamps.clear();
-                return false;
+            public void clear() throws EmptyDataException {
+                if (!this.timestamps.isEmpty() && !this.valueSet.isEmpty()) {
+                    this.valueSet.clear();
+                    this.timestamps.clear();
+                } else
+                    throw new EmptyDataException("Storage is empty");
             }
 
             @Override
@@ -97,13 +99,21 @@ public class SensorDataTransmissionTests {
             }
 
             @Override
-            public long getLastTimestamp() {
-                return  this.timestamps.getLast();
+            public long getLastTimestamp() throws EmptyDataException {
+
+                if (this.timestamps.isEmpty())
+                    throw new EmptyDataException("No data!");
+                else
+                    return  this.timestamps.getLast();
             }
 
             @Override
-            public float[] getLastValueSet() {
-                return this.valueSet.getLast();
+            public float[] getLastValueSet() throws EmptyDataException {
+
+                if (this.valueSet.isEmpty())
+                    throw new EmptyDataException("No data!");
+                else
+                    return this.valueSet.getLast();
             }
 
             //Helper Method to transform the data into a preferred format
@@ -153,16 +163,19 @@ public class SensorDataTransmissionTests {
             System.out.println("there's no data in the storage");
         }
 
-        // just dummy values
         String sensorNameReceived = sensorDataReceiver.getSensorName();
-        long timeStampReceived = dataStorageReceived.getLastTimestamp(); // dummy
-        float[] valueSetReceived = dataStorageReceived.getLastValueSet();
-
-        // test
         Assert.assertEquals(sensorName, sensorNameReceived);
-        Assert.assertEquals(timeStamp, timeStampReceived);
-        Assert.assertArrayEquals(valueSet, valueSetReceived, 0.01f);
-        // TODO: test values
+
+        try {
+
+            long timeStampReceived = dataStorageReceived.getLastTimestamp(); // dummy
+            float[] valueSetReceived = dataStorageReceived.getLastValueSet();
+
+            Assert.assertEquals(timeStamp, timeStampReceived);
+            Assert.assertArrayEquals(valueSet, valueSetReceived, 0.01f);
+        } catch (EmptyDataException ex) {
+            System.out.println("No Data is saved, errror");
+        }
     }
 
     @Test

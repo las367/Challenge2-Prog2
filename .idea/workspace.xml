@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sensorData/SensorDataReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sensorData/SensorDataSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transmission/DataConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transmission/DataConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sensorData/SensorDataTransmissionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/transmission/TransmissionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EmptyDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/EmptyDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NoSuchDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/NoSuchDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/PersistenceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SensorDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/SensorDataStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WriteAndReadDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/WriteAndReadDataSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/WriteAndReadDataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filepersistence/SensorDataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filepersistence/SensorDataStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sensorData/SensorDataTransmissionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sensorData/SensorDataTransmissionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/transmission/TransmissionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/transmission/TransmissionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SensorDataTransmissionTests.testHelper">
+  <component name="RunManager" selected="JUnit.TransmissionTests.gutConnectionTest1">
     <configuration name="WriteAndReadDataSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="filepersistence.WriteAndReadDataSet" />
       <module name="Challenge2-Prog2" />
@@ -135,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SensorDataTransmissionTests.testHelper" />
-        <item itemvalue="JUnit.SensorDataTransmissionTests.gutTransmissionTest" />
         <item itemvalue="JUnit.TransmissionTests.gutConnectionTest1" />
+        <item itemvalue="JUnit.SensorDataTransmissionTests.gutTransmissionTest" />
+        <item itemvalue="JUnit.SensorDataTransmissionTests.testHelper" />
         <item itemvalue="JUnit.WriteAndReadDataSetTest.printAndReadData" />
         <item itemvalue="Application.WriteAndReadDataSet" />
       </list>
@@ -175,31 +165,31 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="753" y="314" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586872630081" />
-    <state width="1543" height="231" key="GridCell.Tab.0.bottom" timestamp="1587287950334">
-      <screen x="0" y="30" width="3840" height="1050" />
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom" timestamp="1587389021031">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
+    <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587389021031" />
     <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
     <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1587235863183" />
     <state width="1543" height="231" key="GridCell.Tab.0.bottom/0.30.3840.1050@0.30.3840.1050" timestamp="1587287950334" />
-    <state width="1543" height="231" key="GridCell.Tab.0.center" timestamp="1587287950333">
-      <screen x="0" y="30" width="3840" height="1050" />
+    <state width="1543" height="231" key="GridCell.Tab.0.center" timestamp="1587389021031">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
+    <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587389021031" />
     <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
     <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1587235863181" />
     <state width="1543" height="231" key="GridCell.Tab.0.center/0.30.3840.1050@0.30.3840.1050" timestamp="1587287950333" />
-    <state width="1543" height="231" key="GridCell.Tab.0.left" timestamp="1587287950333">
-      <screen x="0" y="30" width="3840" height="1050" />
+    <state width="1543" height="231" key="GridCell.Tab.0.left" timestamp="1587389021031">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906772" />
+    <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587389021031" />
     <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
     <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1587235863179" />
     <state width="1543" height="231" key="GridCell.Tab.0.left/0.30.3840.1050@0.30.3840.1050" timestamp="1587287950333" />
-    <state width="1543" height="231" key="GridCell.Tab.0.right" timestamp="1587287950334">
-      <screen x="0" y="30" width="3840" height="1050" />
+    <state width="1543" height="231" key="GridCell.Tab.0.right" timestamp="1587389021031">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868906773" />
+    <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587389021031" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1587235863182" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.3840.1050@0.30.3840.1050" timestamp="1587287950334" />
@@ -208,10 +198,10 @@
     </state>
     <state x="2359" y="103" width="1024" height="848" key="SettingsEditor/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766311937" />
     <state x="439" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1587227895365" />
-    <state x="625" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1587277235744">
-      <screen x="0" y="30" width="3840" height="1050" />
+    <state x="625" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1587388288078">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586872615378" />
+    <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587388288078" />
     <state x="2545" y="353" key="com.intellij.ide.util.TipDialog/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766047804" />
     <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1587235054423" />
     <state x="625" y="373" key="com.intellij.ide.util.TipDialog/0.30.3840.1050@0.30.3840.1050" timestamp="1587277235744" />

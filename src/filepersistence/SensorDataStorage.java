@@ -21,8 +21,9 @@ public interface SensorDataStorage {
      * @return true if successful, false if error occurred
      * @throws IOException id there is an error on Input/Output
      * @throws PersistenceException if something unexpected happened. Insufficient right, medium broken, offline..
+     * @throws EmptyDataException if there are no data saved by the machine
      */
-    boolean writeData(String filename) throws IOException, PersistenceException;
+    boolean writeData(String filename) throws IOException, PersistenceException, EmptyDataException;
 
     /**
      * Method to return the size of data in the machine
@@ -33,13 +34,12 @@ public interface SensorDataStorage {
 
     /**
      * method to clear all data saved inside the machine
-     * @return returns true if successful and false if error occurred
      * @throws EmptyDataException if there are no data saved by the machine
      */
-    boolean clear() throws EmptyDataException;
+    void clear() throws EmptyDataException;
 
     /**
-     * check if a dataset on a specified timestamp exists in the storage
+     * check if a data set on a specified timestamp exists in the storage
      * @param time timestamp specified by user to get a particular data set
      * @return true if the storage contains the specified data
      * @throws EmptyDataException if there are no data saved by the machine
@@ -48,14 +48,24 @@ public interface SensorDataStorage {
 
     /**
      * method to get a data set on a specified timestamp
-     * @param time
+     * @param time specific time stamp given by the user
      * @return an array of data set
      * @throws EmptyDataException if there are no data saved by the machine
      * @throws NoSuchDataException if there are no data set saved on the particular timestamp.
      */
     float[] get(long time) throws EmptyDataException, NoSuchDataException;
 
-    long getLastTimestamp();
+    /**
+     *
+     * @return get lat time stamp saved by the storage machine
+     * @throws EmptyDataException if there are no data saved by the machine
+     */
+    long getLastTimestamp() throws EmptyDataException;
 
-    float[] getLastValueSet();
+    /**
+     *
+     * @return last value set saved by the storage machine
+     * @throws EmptyDataException if there are no data saved by the machine
+     */
+    float[] getLastValueSet() throws EmptyDataException;
 }

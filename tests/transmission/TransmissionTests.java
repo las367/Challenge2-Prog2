@@ -14,7 +14,7 @@ public class TransmissionTests {
     @Test
     public void gutConnectionTest1() throws IOException {
         // open server side
-        /*DataConnection serverSide = new DataConnector(PORTNUMBER);
+        DataConnection serverSide = new DataConnector(PORTNUMBER);
 
         // open client side
         DataConnection clientSide = new DataConnector("localhost", PORTNUMBER);
@@ -25,7 +25,7 @@ public class TransmissionTests {
         DataInputStream dataInputStream = serverSide.getDataInputStream();
         int readValue = dataInputStream.readInt();
 
-        Assert.assertEquals(TEST_INT, readValue);*/
+        Assert.assertEquals(TEST_INT, readValue);
     }
 
 
