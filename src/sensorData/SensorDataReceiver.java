@@ -27,6 +27,9 @@ public class SensorDataReceiver {
     public void receiveData() {
 
         try {
+
+            System.out.println("Receiving");
+
             DataInputStream in = connection.getDataInputStream();
             String dataInString = in.readUTF();
 
@@ -39,8 +42,7 @@ public class SensorDataReceiver {
             float[] values = stringToFloat(valuesInString.split(","));
 
             //index 1 should be where the date string lies
-            Date date = stringToDate(datas[1]);
-            long timestamp = date.getTime();
+            long timestamp = Long.parseLong(datas[1]);
 
             //index 0 is where the sensor name lies
             this.sensorName = datas[0];
@@ -76,7 +78,7 @@ public class SensorDataReceiver {
         return toRet;
     }
 
-    public static Date stringToDate(String dateInString) {
+    /*public static Date stringToDate(String dateInString) {
         Date date = null;
         try {
             //default formatting for java date object? not sure about this
@@ -88,5 +90,5 @@ public class SensorDataReceiver {
             System.out.println("Error parsing date");
         }
         return date;
-    }
+    } */
 }

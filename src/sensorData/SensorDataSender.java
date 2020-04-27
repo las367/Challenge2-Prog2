@@ -20,6 +20,8 @@ public class SensorDataSender {
         String data = createData(name, time, values);
 
         try {
+
+            System.out.println("Sending data..");
             DataOutputStream out = connection.getDataOutputStream();
             out.writeUTF(data);
             out.close();
@@ -30,6 +32,6 @@ public class SensorDataSender {
 
     //Helper Method to transform the data into a preferred format
     private String createData(String name, long timeStamp, float[] value) {
-        return name + "\n" + new Date(timeStamp) + "\n" + Arrays.toString(value) + "\n";
+        return name + "\n" + timeStamp + "\n" + Arrays.toString(value) + "\n";
     }
 }

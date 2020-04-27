@@ -38,10 +38,9 @@ public class SensorDataTransmissionTests {
         // TODO: create object that implements SensorDataStorage
         SensorDataStorage dataStorage = new SensorDataStorage() {
 
-            String sensorName = "MyGoodOldSensor";
+            final String sensorName = "MyGoodOldSensor";
             LinkedList<float[]> valueSet = new LinkedList<>();
             LinkedList<Long> timestamps = new LinkedList<>();
-            int index = 0;
 
             @Override
             public void saveData(long time, float[] values) throws PersistenceException {
@@ -122,8 +121,12 @@ public class SensorDataTransmissionTests {
             }
         };
 
+        //create one thread each for server and client and start them.
+
         // create connections
-        DataConnection receiverConnection = new DataConnector(PORTNUMBER);
+        DataConnector receiverConnection = new DataConnector(PORTNUMBER);
+        Thread serverThread = new Thread(receiverConnection);
+        serverThread.start();
 
         // create receiver
         SensorDataReceiver sensorDataReceiver = new SensorDataReceiver(receiverConnection, dataStorage);
@@ -133,7 +136,9 @@ public class SensorDataTransmissionTests {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
         // create connections
-        DataConnection senderConnection = new DataConnector("localhost", PORTNUMBER);
+        DataConnector senderConnection = new DataConnector("localhost", PORTNUMBER);
+        Thread clientThread = new Thread(senderConnection);
+        clientThread.start();
 
         // create sender
         SensorDataSender sensorDataSender = new SensorDataSender(senderConnection);
@@ -145,13 +150,16 @@ public class SensorDataTransmissionTests {
         // send data with TCP
         sensorDataSender.sendData(sensorName, timeStamp, valueSet);
 
+        //!! Before: no receive data.
+        sensorDataReceiver.receiveData();
         // test if stored
         SensorDataStorage dataStorageReceived = sensorDataReceiver.getStorage();
 
-        // TODO - get data and test
         boolean isValueSaved;
 
+        //check
         try {
+
             isValueSaved = dataStorage.contains(timeStamp);
 
             if (isValueSaved) {
@@ -163,12 +171,15 @@ public class SensorDataTransmissionTests {
             System.out.println("there's no data in the storage");
         }
 
+        //sensor name => no error throw
         String sensorNameReceived = sensorDataReceiver.getSensorName();
         Assert.assertEquals(sensorName, sensorNameReceived);
 
+        //catching empty data exception => try-catch block needed.
+
         try {
 
-            long timeStampReceived = dataStorageReceived.getLastTimestamp(); // dummy
+            long timeStampReceived = dataStorageReceived.getLastTimestamp();
             float[] valueSetReceived = dataStorageReceived.getLastValueSet();
 
             Assert.assertEquals(timeStamp, timeStampReceived);
@@ -182,23 +193,13 @@ public class SensorDataTransmissionTests {
     public void testHelper() {
 
         float[] fl = { 1.2f, 3, 4.2f, 5 };
-        Date date = new Date();
-        long dateInNum = date.getTime();
-        String data = Arrays.toString(fl) + "\n Sample Data\n" + date;
+        String data = Arrays.toString(fl) + "\n Sample Data\n";
         String[] datasInArray = SensorDataReceiver.readLineByLine(data);
 
         //index 0 should be the array fl...
         String flInString = datasInArray[0].substring(1, datasInArray[0].length() - 1);
         float[] floatParsed = SensorDataReceiver.stringToFloat(flInString.split(","));
 
-        Date dt = SensorDataReceiver.stringToDate(datasInArray[2]);
-        long dtNum = dt.getTime();
-        //index 2 should be the date object
-
-        System.out.println(dt);
-        System.out.println(date);
-
-        //Assert.assertEquals(dateInNum, dtNum);
         Assert.assertArrayEquals(fl, floatParsed, 0f);
     }
 }
