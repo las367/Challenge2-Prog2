@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Challenge2-Prog2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challenge2-Prog2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sensorData/SensorDataReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sensorData/SensorDataReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sensorData/SensorDataSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sensorData/SensorDataSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/transmission/DataConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/transmission/DataConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sensorData/SensorDataTransmissionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sensorData/SensorDataTransmissionTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +38,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HO" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -171,10 +163,10 @@
     </state>
     <state x="600" y="63" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868838276" />
     <state x="2520" y="34" width="702" height="986" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766883824" />
-    <state x="753" y="314" width="424" height="487" key="FileChooserDialogImpl" timestamp="1586872630081">
+    <state x="1220" y="275" width="424" height="487" key="FileChooserDialogImpl" timestamp="1588265055231">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="753" y="314" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586872630081" />
+    <state x="1220" y="275" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1588265055231" />
     <state width="1733" height="253" key="GridCell.Tab.0.bottom" timestamp="1588015356382">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>

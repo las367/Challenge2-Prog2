@@ -1,0 +1,10 @@
+Also die Quellcode für Connector
+https://github.com/las367/Challenge2-Prog2/blob/master/src/transmission/DataConnection.java
+https://github.com/las367/Challenge2-Prog2/blob/master/src/transmission/DataConnector.java
+
+Die Quellcode für TCP Übertragung. Habe die Konstruktoren so geändert, dass die Klasse mit der run Methode vom Interface Runnable genau gut 
+zusammenarbeiten kann.
+https://github.com/las367/Challenge2-Prog2/blob/master/src/transmission/DataConnector.java
+
+Die Test Dateien...
+https://github.com/las367/Challenge2-Prog2/blob/master/tests/sensorData/SensorDataTransmissionTests.java
