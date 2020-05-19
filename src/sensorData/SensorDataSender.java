@@ -17,17 +17,22 @@ public class SensorDataSender {
 
         String data = createData(name, time, values);
 
-        try {
+        while ( true ) {
 
-            System.out.println("Sending data..");
-            DataOutputStream out = connection.getDataOutputStream();
-            out.writeUTF(data);
-            out.close();
-        } catch (IOException ex) {
-            System.out.println("Something unexpected happened");
-        } catch ( NullPointerException ex ) {
+            try {
 
-            System.err.println(ex);
+                System.out.println("Sending data..");
+                DataOutputStream out = connection.getDataOutputStream();
+                out.writeUTF(data);
+                out.close();
+
+                break;
+            } catch (IOException ex) {
+                System.out.println("Something unexpected happened");
+                break;
+            } catch ( NullPointerException ex ) {
+    
+            }
         }
     }
 

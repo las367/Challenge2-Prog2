@@ -23,10 +23,22 @@ public class TransmissionTests {
         Thread clientThread = new Thread(clientSide);
         clientSide.run();
 
-        DataOutputStream dataOutputStream = clientSide.getDataOutputStream();
-        dataOutputStream.writeInt(TEST_INT);
+        DataOutputStream dataOutputStream = null;
+        DataInputStream dataInputStream = null;
 
-        DataInputStream dataInputStream = serverSide.getDataInputStream();
+        while ( true ) {
+
+            try {
+
+                dataOutputStream = clientSide.getDataOutputStream();
+                dataInputStream = serverSide.getDataInputStream();
+                break;
+            } catch ( NullPointerException ex ) {
+
+            }
+        }
+
+        dataOutputStream.writeInt(TEST_INT);
         int readValue = dataInputStream.readInt();
 
         Assert.assertEquals(TEST_INT, readValue);

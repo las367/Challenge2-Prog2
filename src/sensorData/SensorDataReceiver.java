@@ -26,35 +26,45 @@ public class SensorDataReceiver {
 
     public void receiveData() {
 
-        try {
-
-            System.out.println("Receiving");
-
-            DataInputStream in = connection.getDataInputStream();
-            String dataInString = in.readUTF();
-
-            //split the data into 3 parts
-            String datas[] = readLineByLine(dataInString);
-            //index 2 is where the float values lie
-            //first delete the brackets on start and end of the array
-            String valuesInString = datas[2].substring(1, datas[2].length()-1);
-            //then split the array from
-            float[] values = stringToFloat(valuesInString.split(","));
-
-            //index 1 should be where the date string lies
-            long timestamp = Long.parseLong(datas[1]);
-
-            //index 0 is where the sensor name lies
-            this.sensorName = datas[0];
+        while ( true ) {
 
             try {
-                storage.saveData(timestamp, values);
-            } catch (PersistenceException ex) {
-                System.out.println("Persistence Exception, something isn't right");
-            }
 
-        } catch (IOException ex) {
-            System.out.println("Something unexpected occurred");
+                System.out.println("Receiving");
+    
+                DataInputStream in = connection.getDataInputStream();
+                String dataInString = in.readUTF();
+    
+                //split the data into 3 parts
+                String datas[] = readLineByLine(dataInString);
+                //index 2 is where the float values lie
+                //first delete the brackets on start and end of the array
+                String valuesInString = datas[2].substring(1, datas[2].length()-1);
+                //then split the array from
+                float[] values = stringToFloat(valuesInString.split(","));
+    
+                //index 1 should be where the date string lies
+                long timestamp = Long.parseLong(datas[1]);
+    
+                //index 0 is where the sensor name lies
+                this.sensorName = datas[0];
+    
+                try {
+                    storage.saveData(timestamp, values);
+                } catch (PersistenceException ex) {
+                    System.out.println("Persistence Exception, something isn't right");
+                }
+
+                break;
+    
+            } catch (IOException ex) {
+                System.out.println("Something unexpected occurred");
+                break;
+
+            } catch ( NullPointerException ex ) {
+
+
+            }
         }
     }
 
