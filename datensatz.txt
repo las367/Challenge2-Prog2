@@ -1,9 +1,9 @@
 MyGoodOldSensor
-Sat Apr 18 20:48:38 CEST 2020
+Tue May 19 18:35:04 CEST 2020
 [1.5]
 MyGoodOldSensor
-Sat Apr 18 20:48:38 CEST 2020
+Tue May 19 18:35:04 CEST 2020
 [0.7, 1.2, 2.1]
 MyGoodOldSensor
-Sat Apr 18 20:48:39 CEST 2020
+Tue May 19 18:35:05 CEST 2020
 [0.7, 1.2]

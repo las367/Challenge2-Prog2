@@ -9,6 +9,7 @@ import org.junit.Test;
 import transmission.DataConnection;
 import transmission.DataConnector;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -137,8 +138,8 @@ public class SensorDataTransmissionTests {
 
         // create connections
         DataConnector senderConnection = new DataConnector("localhost", PORTNUMBER);
-        Thread clientThread = new Thread(senderConnection);
-        clientThread.start();
+        // Thread clientThread = new Thread(senderConnection);
+        senderConnection.run();
 
         // create sender
         SensorDataSender sensorDataSender = new SensorDataSender(senderConnection);
@@ -152,6 +153,7 @@ public class SensorDataTransmissionTests {
 
         //!! Before: no receive data.
         sensorDataReceiver.receiveData();
+
         // test if stored
         SensorDataStorage dataStorageReceived = sensorDataReceiver.getStorage();
 

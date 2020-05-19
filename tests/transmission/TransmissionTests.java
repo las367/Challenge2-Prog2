@@ -14,10 +14,14 @@ public class TransmissionTests {
     @Test
     public void gutConnectionTest1() throws IOException {
         // open server side
-        DataConnection serverSide = new DataConnector(PORTNUMBER);
+        DataConnector serverSide = new DataConnector(PORTNUMBER);
+        Thread serverThread = new Thread(serverSide);
+        serverThread.start();
 
         // open client side
-        DataConnection clientSide = new DataConnector("localhost", PORTNUMBER);
+        DataConnector clientSide = new DataConnector("localhost", PORTNUMBER);
+        Thread clientThread = new Thread(clientSide);
+        clientSide.run();
 
         DataOutputStream dataOutputStream = clientSide.getDataOutputStream();
         dataOutputStream.writeInt(TEST_INT);

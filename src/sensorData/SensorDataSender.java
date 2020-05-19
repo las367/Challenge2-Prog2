@@ -1,12 +1,10 @@
 package sensorData;
 
-import filepersistence.SensorDataStorage;
 import transmission.DataConnection;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Date;
 
 public class SensorDataSender {
     private final DataConnection connection;
@@ -27,6 +25,9 @@ public class SensorDataSender {
             out.close();
         } catch (IOException ex) {
             System.out.println("Something unexpected happened");
+        } catch ( NullPointerException ex ) {
+
+            System.err.println(ex);
         }
     }
 

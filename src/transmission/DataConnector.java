@@ -9,8 +9,8 @@ import java.net.UnknownHostException;
 
 public class DataConnector implements DataConnection, Runnable {
 
-    private Socket socket = null;
-    private ServerSocket server = null;
+    private Socket socket;
+    private ServerSocket server;
 
     private String address;
     private int port;
