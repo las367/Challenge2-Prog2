@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅" />
+    <list default="true" id="58fce6d8-e221-4f13-81cf-c6c268d9f370" name="Default Changelist" comment="💅">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chess/ChessEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chess/ChessEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sensorData/SensorDataReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sensorData/SensorDataReceiver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,9 +42,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HO" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ads/Algo-Ex2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -52,7 +56,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SensorDataTransmissionTests.gutTransmissionTest">
+  <component name="RunManager" selected="JUnit.SensorDataTransmissionTests">
+    <configuration name="SensorDataTransmissionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge2-Prog2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sensorData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sensorData" />
+      <option name="MAIN_CLASS_NAME" value="sensorData.SensorDataTransmissionTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SensorDataTransmissionTests.gutTransmissionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Challenge2-Prog2" />
       <extension name="coverage">
@@ -64,22 +83,6 @@
       <option name="PACKAGE_NAME" value="sensorData" />
       <option name="MAIN_CLASS_NAME" value="sensorData.SensorDataTransmissionTests" />
       <option name="METHOD_NAME" value="gutTransmissionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SensorDataTransmissionTests.testHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Challenge2-Prog2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sensorData.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sensorData" />
-      <option name="MAIN_CLASS_NAME" value="sensorData.SensorDataTransmissionTests" />
-      <option name="METHOD_NAME" value="testHelper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SensorDataTransmissionTests" />
         <item itemvalue="JUnit.SensorDataTransmissionTests.gutTransmissionTest" />
         <item itemvalue="JUnit.TransmissionTests" />
         <item itemvalue="JUnit.WriteAndReadDataSetTest" />
         <item itemvalue="JUnit.TransmissionTests.gutConnectionTest1" />
-        <item itemvalue="JUnit.SensorDataTransmissionTests.testHelper" />
       </list>
     </recent_temporary>
   </component>
@@ -163,9 +166,10 @@
     </state>
     <state x="600" y="63" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586868838276" />
     <state x="2520" y="34" width="702" height="986" key="CommitChangelistDialog2/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766883824" />
-    <state x="1220" y="275" width="424" height="487" key="FileChooserDialogImpl" timestamp="1588265055231">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="1220" y="252" width="424" height="487" key="FileChooserDialogImpl" timestamp="1589901375111">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="1220" y="252" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1589901375111" />
     <state x="1220" y="275" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1588265055231" />
     <state width="1733" height="253" key="GridCell.Tab.0.bottom" timestamp="1588015356382">
       <screen x="0" y="30" width="1920" height="1050" />
@@ -195,9 +199,10 @@
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586768629934" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1587235863182" />
     <state width="1543" height="231" key="GridCell.Tab.0.right/0.30.3840.1050@0.30.3840.1050" timestamp="1587287950334" />
-    <state x="725" y="99" width="1024" height="848" key="SettingsEditor" timestamp="1587998596294">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="523" y="66" width="1024" height="848" key="SettingsEditor" timestamp="1589898474928">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="523" y="66" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1589898474928" />
     <state x="725" y="99" key="SettingsEditor/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1587998596294" />
     <state x="2359" y="103" width="1024" height="848" key="SettingsEditor/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766311937" />
     <state x="439" y="130" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1587227895365" />
@@ -225,9 +230,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="605" y="173" width="774" height="900" key="find.popup/0.30.1920.1050/1920.0.1920.1080@0.30.1920.1050" timestamp="1586867262046" />
-    <state x="2260" y="102" width="1222" height="850" key="new project wizard" timestamp="1586766293257">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="340" y="102" width="1222" height="850" key="new project wizard" timestamp="1589900297683">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="340" y="102" key="new project wizard/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1589900297683" />
     <state x="2260" y="102" width="1222" height="850" key="new project wizard/0.30.1920.1050/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586766293257" />
     <state x="2497" y="280" width="672" height="160" key="search.everywhere.popup" timestamp="1587280813349">
       <screen x="0" y="30" width="3840" height="1050" />

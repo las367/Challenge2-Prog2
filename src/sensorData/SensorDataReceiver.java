@@ -22,7 +22,7 @@ public class SensorDataReceiver {
 
     SensorDataStorage getStorage() {
         return storage;
-    }
+    }  
 
     public void receiveData() {
 
