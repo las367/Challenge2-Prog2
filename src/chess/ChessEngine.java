@@ -8,7 +8,7 @@ public class ChessEngine implements IEngine {
         Receiver in;
         ChessStates state;
 
-          //private object containing ids for each actions!
+        // private object containing ids for each actions!
         private static class ActionIds {
 
                 static int dice = 0;
@@ -19,74 +19,129 @@ public class ChessEngine implements IEngine {
                 static int proposalEnd = 5;
         }          
 
-          //intialize in, out and start state here!
+        // intialize in, out and start state here!
         public ChessEngine() {
 
                     state = ChessStates.START;
-          }
+        }
 
+        // to create strings with data and IDs appended at start.
         private String formatString (int actionId, int[] dataArray) {
 
-                    StringBuilder builder = new StringBuilder();
+                StringBuilder builder = new StringBuilder();
 
-                    builder.append(actionId);
+                builder.append(actionId);
 
-                    for ( int i : dataArray ) {
-                              builder.append(i);
-                    }
+                for ( int i : dataArray ) {
+                        builder.append(i);
+                }
 
-                    return builder.toString();
+                return builder.toString();
         }
 
         @Override
         public void dice() throws OutOfStateException {
 
-                if ( state != ChessStates.CONNECTED ) throw new OutOfStateException("Softwares are not yet connected!");
+                if ( state != ChessStates.START ) throw new OutOfStateException("Softwares are not yet connected!");
 
                 Random random = new Random();
                 int num = random.nextInt(101);       
+
+                state = ChessStates.WAIT;
         }
 
 	@Override
 	public void chooseColor(boolean white) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+                
+                if ( state != ChessStates.WAIT || state != ChessStates.START ) throw new OutOfStateException("Softwares are not yet connected!")
+
+                state = white ? ChessStates.ACTIVE : ChessStates.PASSIVE;
 	}
 
 	@Override
 	public void move(int from, int to) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+
+                if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+                
+                // TODO
+
+                state = ChessStates.PASSIVE;
 	}
 
 	@Override
 	public void movePawnRule(int from, int figureType) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+
+		if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+                
+                // TODO
+                
+                state = ChessStates.PASSIVE;	
 	}
 
 	@Override
 	public void rochade(int from) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+
+                if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+                
+                // TODO
+                switch ( from ) {
+                        case 1: 
+                                // Dame
+                                break;
+                        case 2:
+                                // Turm
+                                break;
+                        case 3:
+                                // Springer
+                                break;
+                        case 4:
+                                // Laeufer
+                                break;
+                        default:
+                                // error handling
+                                break;
+                }
+                
+                state = ChessStates.PASSIVE;
 	}
 
 	@Override
 	public void endGame(int reason) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+                
+                if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+
+                switch ( reason ) {
+                        case 0: 
+                                // checkmate!
+                                break;
+                        case 1:
+                                // stalemate
+                                break;
+                        case 2:
+                                // abandon
+                                break;
+                        default:
+                                // error handling
+                                break;
+                }
+
+                state = ChessStates.END;
 	}
 
 	@Override
 	public void proposalEnd(int reason) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+		
+                if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+                
+                state = ChessStates.WAIT;
 	}
 
 	@Override
 	public void proposalAnswer(boolean accept) throws OutOfStateException {
-			// TODO Auto-generated method stub
-			
+
+                if ( state != ChessStates.ACTIVE ) throw new OutOfStateException("Player is not on active state!");
+
+                state = accept ? ChessStates.END : ChessStates.PASSIVE;
 	}
 
 }
