@@ -138,8 +138,9 @@ public class SensorDataTransmissionTests {
 
         // create connections
         DataConnector senderConnection = new DataConnector("localhost", PORTNUMBER);
-        // Thread clientThread = new Thread(senderConnection);
-        senderConnection.run();
+        Thread clientThread = new Thread(senderConnection);
+        // senderConnection.run();
+        clientThread.start();
 
         // create sender
         SensorDataSender sensorDataSender = new SensorDataSender(senderConnection);
@@ -189,6 +190,8 @@ public class SensorDataTransmissionTests {
         } catch (EmptyDataException ex) {
             System.out.println("No Data is saved, errror");
         }
+
+        // TODO: How to stop the thread here?
     }
 
     @Test

@@ -2,5 +2,5 @@ package chess;
 
 public enum ChessStates {
     
-        START, CONNECTED, ACTIVE, PASSIVE, END
+        START, ACTIVE, PASSIVE, END, WAIT
 }
